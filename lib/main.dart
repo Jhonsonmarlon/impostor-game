@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:impostor/bottom_navigation_bar_widget.dart';
 import 'package:impostor/drawer_widget.dart';
+import 'package:impostor/game_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -35,7 +36,6 @@ class _HomePageState extends State<HomePage> {
   var _selectedTab = SelectedTab.home;
   bool _showNewGameCard = false;
   bool _showLibraryCard = false;
-  int _participants = 2;
 
   void _handleIndexChanged(int i) {
     final newTab = SelectedTab.values[i];
@@ -61,7 +61,7 @@ class _HomePageState extends State<HomePage> {
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => const LoadingScreen(),
+        builder: (context) => const GamePage(),
       ),
     );
   }
@@ -117,30 +117,15 @@ class _HomePageState extends State<HomePage> {
                               mainAxisSize: MainAxisSize.min,
                               children: [
                                 const Text(
-                                  'Quantos participantes?',
+                                  'Bem-vindo ao Impostor Game!',
                                   style: TextStyle(fontSize: 18),
                                 ),
-                                Slider(
-                                  value: _participants.toDouble(),
-                                  min: 2,
-                                  max: 10,
-                                  divisions: 8,
-                                  label: _participants.toString(),
-                                  onChanged: (value) {
-                                    setState(() {
-                                      _participants = value.toInt();
-                                    });
-                                  },
+                                const SizedBox(height: 10),
+                                const Text(
+                                  'O objetivo do jogo é descobrir quem é o impostor entre os participantes. Você pode começar o jogo e selecionar os participantes na próxima tela.',
+                                  style: TextStyle(fontSize: 16),
                                 ),
-                                Text(
-                                  'Número de participantes: $_participants',
-                                  style: const TextStyle(fontSize: 16),
-                                ),
-                                Text(
-                                  'Haverá ${_participants <= 6 ? '1 impostor' : '2 impostores'}',
-                                  style: const TextStyle(
-                                      fontSize: 16, color: Colors.red),
-                                ),
+                                const SizedBox(height: 20),
                                 ElevatedButton(
                                   onPressed: () => _startGame(context),
                                   style: ElevatedButton.styleFrom(
@@ -175,57 +160,6 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
         ],
-      ),
-    );
-  }
-}
-
-class LoadingScreen extends StatelessWidget {
-  const LoadingScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    Future.delayed(const Duration(seconds: 3), () {
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(
-          builder: (context) => const GamePage(),
-        ),
-      );
-    });
-
-    return Scaffold(
-      body: Center(
-        child: Image.asset('assets/countdown.gif'),
-      ),
-    );
-  }
-}
-
-class GamePage extends StatelessWidget {
-  const GamePage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Jogo'),
-        backgroundColor: const Color.fromARGB(255, 231, 15, 15),
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back, color: Colors.white),
-          onPressed: () {
-            Navigator.pop(context);
-          },
-        ),
-      ),
-      body: Container(
-        decoration: const BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage('assets/escuro.png'),
-            fit: BoxFit.cover,
-          ),
-        ),
-        // Conteúdo do jogo aqui
       ),
     );
   }

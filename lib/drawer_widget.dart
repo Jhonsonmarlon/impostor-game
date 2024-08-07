@@ -38,7 +38,7 @@ class DrawerWidget extends StatelessWidget {
           const Padding(
             padding: EdgeInsets.all(16.0),
             child: Text(
-              'Versão 1.0.2',
+              'Versão 1.0.3',
               style: TextStyle(color: Colors.grey),
             ),
           ),
