@@ -1,16 +1,41 @@
-# myapp
+# Impostor Game
 
-A new Flutter project.
+[![Flutter](https://img.shields.io/badge/Flutter-Framework-blue)](https://flutter.dev/)
+[![License](https://img.shields.io/badge/License-MIT-green)](https://opensource.org/licenses/MIT)
 
-## Getting Started
+## Descrição
+**Impostor Game** é um aplicativo móvel desenvolvido em Flutter, inspirado no popular jogo de dedução social. Os jogadores podem configurar o número de participantes e impostores, iniciar uma nova partida e explorar a biblioteca de desenhos.
 
-This project is a starting point for a Flutter application.
+## Capturas de Tela
+| Tela Principal | Novo Jogo | Jogo |
+| :---: | :---: | :---: |
+| ![Home](assets/screenshots/home.png) | ![Novo Jogo](assets/screenshots/novo_jogo.png) | ![Jogo](assets/screenshots/jogo.png) |
 
-A few resources to get you started if this is your first Flutter project:
+## Funcionalidades
+- **Página Inicial:** Navegação principal do aplicativo.
+- **Novo Jogo:** Configuração de participantes e início da partida.
+- **Biblioteca:** Acesso à biblioteca de desenhos.
+- **Jogo:** Tela de jogo principal.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Estrutura do Projeto
+```plaintext
+impostor/
+├── android/
+├── assets/
+│   ├── screenshots/
+│   │   ├── home.png
+│   │   ├── novo_jogo.png
+│   │   └── jogo.png
+│   ├── wolf.png
+│   └── escuro.png
+├── ios/
+├── lib/
+│   ├── bottom_navigation_bar_widget.dart
+│   ├── drawer_widget.dart
+│   └── main.dart
+├── test/
+├── .gitignore
+├── pubspec.yaml
+└── README.md
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Feito com ❤️ por JJ DEVELOPER
