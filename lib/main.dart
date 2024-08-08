@@ -122,7 +122,7 @@ class _HomePageState extends State<HomePage> {
                                 ),
                                 const SizedBox(height: 10),
                                 const Text(
-                                  'O objetivo do jogo é descobrir quem é o impostor entre os participantes .. Você pode começar o jogo e selecionar os participantes na próxima tela.',
+                                  'O objetivo do jogo é descobrir quem é o impostor entre os participantes. Você pode começar o jogo e selecionar os participantes na próxima tela.',
                                   style: TextStyle(fontSize: 16),
                                 ),
                                 const SizedBox(height: 20),

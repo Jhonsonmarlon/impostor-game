@@ -1,0 +1,164 @@
+{
+  "categorias": [
+    {
+      "nome": "Animais",
+      "icone": "pets",
+      "palavras": [
+        "Cachorro",
+        "Gato",
+        "Elefante",
+        "Tigre",
+        "Leão",
+        "Pássaro",
+        "Peixe",
+        "Cavalo",
+        "Girafa",
+        "Macaco"
+      ]
+    },
+    {
+      "nome": "Objetos",
+      "icone": "box",
+      "palavras": [
+        "Mesa",
+        "Cadeira",
+        "Lâmpada",
+        "Telefone",
+        "Computador",
+        "Caneta",
+        "Livro",
+        "Relógio",
+        "Copo",
+        "Chave"
+      ]
+    },
+    {
+      "nome": "Comidas",
+      "icone": "fastfood",
+      "palavras": [
+        "Pizza",
+        "Hambúrguer",
+        "Maçã",
+        "Banana",
+        "Sorvete",
+        "Bolo",
+        "Arroz",
+        "Macarrão",
+        "Salada",
+        "Chocolate"
+      ]
+    },
+    {
+      "nome": "Veículos",
+      "icone": "directions_car",
+      "palavras": [
+        "Carro",
+        "Moto",
+        "Bicicleta",
+        "Ônibus",
+        "Trem",
+        "Avião",
+        "Navio",
+        "Caminhão",
+        "Patinete",
+        "Helicóptero"
+      ]
+    },
+    {
+      "nome": "Natureza",
+      "icone": "nature",
+      "palavras": [
+        "Árvore",
+        "Flor",
+        "Montanha",
+        "Rio",
+        "Lago",
+        "Mar",
+        "Sol",
+        "Lua",
+        "Nuvem",
+        "Floresta"
+      ]
+    },
+    {
+      "nome": "Esportes",
+      "icone": "sports_soccer",
+      "palavras": [
+        "Futebol",
+        "Basquete",
+        "Tênis",
+        "Vôlei",
+        "Natação",
+        "Corrida",
+        "Ciclismo",
+        "Boxe",
+        "Golfe",
+        "Skate"
+      ]
+    },
+    {
+      "nome": "Profissões",
+      "icone": "work",
+      "palavras": [
+        "Médico",
+        "Professor",
+        "Engenheiro",
+        "Policial",
+        "Bombeiro",
+        "Advogado",
+        "Cozinheiro",
+        "Motorista",
+        "Cantor",
+        "Pintor"
+      ]
+    },
+    {
+      "nome": "Roupas",
+      "icone": "checkroom",
+      "palavras": [
+        "Camiseta",
+        "Calça",
+        "Vestido",
+        "Sapato",
+        "Chapéu",
+        "Jaqueta",
+        "Saia",
+        "Meias",
+        "Luvas",
+        "Cachecol"
+      ]
+    },
+    {
+      "nome": "Ferramentas",
+      "icone": "build",
+      "palavras": [
+        "Martelo",
+        "Chave de fenda",
+        "Alicate",
+        "Serra",
+        "Parafuso",
+        "Broca",
+        "Lixa",
+        "Furadeira",
+        "Nível",
+        "Pincel"
+      ]
+    },
+    {
+      "nome": "Tecnologia",
+      "icone": "laptop",
+      "palavras": [
+        "Computador",
+        "Tablet",
+        "Smartphone",
+        "Impressora",
+        "Teclado",
+        "Mouse",
+        "Monitor",
+        "Roteador",
+        "Câmera",
+        "Fone de ouvido"
+      ]
+    }
+  ]
+}
