@@ -9,7 +9,8 @@
 ## Capturas de Tela
 | Tela Principal | Novo Jogo | Jogo |
 | :---: | :---: | :---: |
-| ![Home](assets/screenshots/home.png) | ![Novo Jogo](assets/screenshots/novo_jogo.png) | ![Jogo](assets/screenshots/jogo.png) |
+| ![Home](![image](https://github.com/user-attachments/assets/87b7d299-ca30-45b0-82b7-b2f015877334)
+) | ![Novo Jogo](assets/screenshots/novo_jogo.png) | ![Jogo](assets/screenshots/jogo.png) |
 
 ## Funcionalidades
 - **Página Inicial:** Navegação principal do aplicativo.
