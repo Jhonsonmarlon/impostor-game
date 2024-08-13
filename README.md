@@ -18,24 +18,6 @@
 - **Jogo:** Tela de jogo principal.
 
 ## Estrutura do Projeto
-```plaintext
-impostor/
-├── android/
-├── assets/
-│   ├── screenshots/
-│   │   ├── home.png
-│   │   ├── novo_jogo.png
-│   │   └── jogo.png
-│   ├── wolf.png
-│   └── escuro.png
-├── ios/
-├── lib/
-│   ├── bottom_navigation_bar_widget.dart
-│   ├── drawer_widget.dart
-│   └── main.dart
-├── test/
-├── .gitignore
-├── pubspec.yaml
-└── README.md
+```plaintext![image](https://github.com/user-attachments/assets/b26c4095-6358-4932-9aee-de4002060626)
 
 Feito com ❤️ por JJ DEVELOPER
