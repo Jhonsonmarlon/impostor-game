@@ -18,6 +18,7 @@
 - **Jogo:** Tela de jogo principal.
 
 ## Estrutura do Projeto
-```plaintext![image](https://github.com/user-attachments/assets/b26c4095-6358-4932-9aee-de4002060626)
+![image](https://github.com/user-attachments/assets/b26c4095-6358-4932-9aee-de4002060626)
 
+```plaintext
 Feito com ❤️ por JJ DEVELOPER
