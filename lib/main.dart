@@ -1,16 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:impostor/bottom_navigation_bar_widget.dart';
 import 'package:impostor/drawer_widget.dart';
 import 'package:impostor/game_page.dart';
+import 'package:impostor/onboarding_screen.dart'; // Adicione a importação do OnboardingScreen
 
-void main() {
-  runApp(const MyApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  final prefs = await SharedPreferences.getInstance();
+  final isOnboardingCompleted = prefs.getBool('isOnboardingCompleted') ?? false;
+
+  runApp(MyApp(isOnboardingCompleted: isOnboardingCompleted));
 }
 
 enum SelectedTab { home, novoJogo, biblioteca }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  final bool isOnboardingCompleted;
+
+  const MyApp({super.key, required this.isOnboardingCompleted});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +28,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: const HomePage(),
+      home: isOnboardingCompleted ? const HomePage() : OnboardingScreen(),
     );
   }
 }

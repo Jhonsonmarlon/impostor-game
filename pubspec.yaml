@@ -41,6 +41,18 @@ dependencies:
   flutter_animated_button: ^2.0.3
   url_launcher: ^6.3.0
   flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.4.1
+  introduction_screen: ^3.1.14
+  shared_preferences: ^2.3.1
+
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/images/fundo2.png
+  android: true
+  ios: true
+  android_gravity: fill
+  ios_content_mode: scaleAspectFill
+
 
   
 
