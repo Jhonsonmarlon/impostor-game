@@ -9,7 +9,7 @@
 ## Capturas de Tela
 | Tela Principal | Novo Jogo | Jogo |
 | :---: | :---: | :---: |
-| ![Home](assets/screenshots/home.png) | ![Novo Jogo](assets/screenshots/novo_jogo.png) | ![Jogo](assets/screenshots/jogo.png) |
+| ![image](https://github.com/user-attachments/assets/87b7d299-ca30-45b0-82b7-b2f015877334) | ![image](https://github.com/user-attachments/assets/a718e7bd-1a12-4925-8ae5-7e19a29aaed4) | ![image](https://github.com/user-attachments/assets/fd009a5d-0229-4aec-a1ea-66d7dca42793) |
 
 ## Funcionalidades
 - **Página Inicial:** Navegação principal do aplicativo.
@@ -17,25 +17,5 @@
 - **Biblioteca:** Acesso à biblioteca de desenhos.
 - **Jogo:** Tela de jogo principal.
 
-## Estrutura do Projeto
 ```plaintext
-impostor/
-├── android/
-├── assets/
-│   ├── screenshots/
-│   │   ├── home.png
-│   │   ├── novo_jogo.png
-│   │   └── jogo.png
-│   ├── wolf.png
-│   └── escuro.png
-├── ios/
-├── lib/
-│   ├── bottom_navigation_bar_widget.dart
-│   ├── drawer_widget.dart
-│   └── main.dart
-├── test/
-├── .gitignore
-├── pubspec.yaml
-└── README.md
-
 Feito com ❤️ por JJ DEVELOPER
