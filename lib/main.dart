@@ -3,6 +3,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:impostor/bottom_navigation_bar_widget.dart';
 import 'package:impostor/drawer_widget.dart';
 import 'package:impostor/game_page.dart';
+import 'package:impostor/splash_screen.dart';
 import 'package:impostor/onboarding_screen.dart'; // Adicione a importação do OnboardingScreen
 
 void main() async {
@@ -12,8 +13,6 @@ void main() async {
 
   runApp(MyApp(isOnboardingCompleted: isOnboardingCompleted));
 }
-
-enum SelectedTab { home, novoJogo, biblioteca }
 
 class MyApp extends StatelessWidget {
   final bool isOnboardingCompleted;
@@ -27,11 +26,14 @@ class MyApp extends StatelessWidget {
       title: 'Impostor Game',
       theme: ThemeData(
         visualDensity: VisualDensity.adaptivePlatformDensity,
+        fontFamily: 'Poppins', // Define a fonte padrão
       ),
-      home: isOnboardingCompleted ? const HomePage() : OnboardingScreen(),
+      home: SplashScreen(), // Altere para SplashScreen
     );
   }
 }
+
+enum SelectedTab { home, novoJogo, biblioteca }
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});

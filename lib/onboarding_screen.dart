@@ -9,20 +9,23 @@ class OnboardingScreen extends StatelessWidget {
     return IntroductionScreen(
       pages: [
         PageViewModel(
-          title: "Título da Página 1",
-          body: "Descrição da Página 1",
+          title: "Receba seu Desenho",
+          body:
+              "O impostor não conhece o desenho. Ele precisa se misturar e não ser descoberto pelos outros jogadores.",
           image: Image.asset('assets/imagem1.png', width: 327, height: 232),
           decoration: getPageDecoration(),
         ),
         PageViewModel(
-          title: "Título da Página 2",
-          body: "Descrição da Página 2",
+          title: "Desenhe com Cuidado",
+          body:
+              "Cada jogador desenha aos poucos. Evite dar dicas óbvias para o impostor!",
           image: Image.asset('assets/imagem2.png', width: 327, height: 232),
           decoration: getPageDecoration(),
         ),
         PageViewModel(
-          title: "Título da Página 3",
-          body: "Descrição da Página 3",
+          title: "Adivinhe e Engane",
+          body:
+              "O impostor deve adivinhar o desenho, enquanto os outros precisam identificar quem está fingindo.",
           image: Image.asset('assets/imagem3.png', width: 327, height: 232),
           decoration: getPageDecoration(),
           footer: ElevatedButton(
@@ -36,11 +39,12 @@ class OnboardingScreen extends StatelessWidget {
               );
             },
             style: ElevatedButton.styleFrom(
-              backgroundColor: const Color(0xFFFF6E23),
+              backgroundColor: const Color.fromARGB(255, 200, 83, 24),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(10),
               ),
-              padding: const EdgeInsets.symmetric(vertical: 15.0, horizontal: 30.0),
+              padding:
+                  const EdgeInsets.symmetric(vertical: 15.0, horizontal: 15.0),
             ),
             child: const Text(
               'Vamos Jogar',
